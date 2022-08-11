@@ -1,0 +1,20 @@
+.songs-album_header{
+    margin: auto 0;
+}
+.songs-album_social{
+    padding: 0 3rem 
+}
+.table-dark{
+    --bs-table-bg: black
+}
+.songs-album_lyrics{
+    text-align:center;
+}
+.songs-album_release-label{
+    margin: 5rem 0;
+}
+.songs-album_lyrics .longQuotes{
+    margin: 0 17rem;
+    text-align: left;
+    text-indent: 3rem;
+}

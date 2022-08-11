@@ -1,0 +1,8 @@
+<div *ngFor="let release of releasesTotal">
+    <p class="songs-album_release-label h1">{{release.releaseType}}</p>
+    <div>
+      <app-song-card *ngFor="let albumCard of release.albumCards"
+        [albumCard]="albumCard"
+      ></app-song-card>
+    </div>
+</div>
