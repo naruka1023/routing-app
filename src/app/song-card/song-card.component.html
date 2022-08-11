@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-md-3">
+        <img class="img-fluid" [src]="albumCard.imageURL">
+    </div>
+    <div class="col-md-9 songs-album_header">
+        <div class="row">
+            <div class="col-md">
+                <p class="h5">Title: {{albumCard.title}}</p>
+                <p class="h5">Date: {{albumCard.date}}</p>
+            </div>
+            <div class="col-md">
+                <p>
+                    {{albumCard.linerNotes}}
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin-top:1rem">
+            <div class="col-md-2 songs-album_social" *ngFor="let link of albumCard.links">
+                <a [href]="link.url"><img class="img-fluid" [src]="link.image"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-dark table-hover table-borderless">
+    <thead>
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let song of albumCard.songs"  data-bs-toggle="collapse" data-bs-target="#song_1">
+          <td>{{song.title}}</td>
+          <td style='text-align:right'>{{song.time}}</td>
+          <div id="song_1" class="songs-album_lyrics collapse">
+            <div *ngIf="song.quoteFlag; else elseBlock"><p class="longQuotes"><i>{{song.paragraph}}</i></p></div>
+            <ng-template #elseBlock><p><i>{{song.paragraph}}</i></p></ng-template> -->
+              {{song.lyrics}}
+          </div>
+      </tr>
+    </tbody>
+</table>
