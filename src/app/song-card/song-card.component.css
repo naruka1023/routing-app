@@ -9,12 +9,16 @@
 }
 .songs-album_lyrics{
     text-align:center;
-}
-.songs-album_release-label{
-    margin: 5rem 0;
+    margin-bottom:2rem;
 }
 .songs-album_lyrics .longQuotes{
-    margin: 0 17rem;
+    margin: 1rem 17rem;
     text-align: left;
     text-indent: 3rem;
+}
+a{
+    color:white;
+    display:block;
+    width:-webkit-fill-available;
+    text-decoration: none;
 }

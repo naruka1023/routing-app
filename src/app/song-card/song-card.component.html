@@ -1,16 +1,16 @@
-<div class="row">
+<div class="row" style='margin-bottom:2rem'>
     <div class="col-md-3">
         <img class="img-fluid" [src]="albumCard.imageURL">
     </div>
     <div class="col-md-9 songs-album_header">
         <div class="row">
             <div class="col-md">
-                <p class="h5">Title: {{albumCard.title}}</p>
-                <p class="h5">Date: {{albumCard.date}}</p>
+                <p class="h5">{{albumCard.title}}</p>
+                <p class="h7">{{albumCard.date}}</p>
             </div>
             <div class="col-md">
-                <p>
-                    {{albumCard.linerNotes}}
+                <p *ngFor="let linerNote of albumCard.linerNotes?.split('##')">
+                    {{linerNote}} <br>
                 </p>
             </div>
         </div>
@@ -27,14 +27,32 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let song of albumCard.songs"  data-bs-toggle="collapse" data-bs-target="#song_1">
-          <td>{{song.title}}</td>
-          <td style='text-align:right'>{{song.time}}</td>
-          <div id="song_1" class="songs-album_lyrics collapse">
-            <div *ngIf="song.quoteFlag; else elseBlock"><p class="longQuotes"><i>{{song.paragraph}}</i></p></div>
-            <ng-template #elseBlock><p><i>{{song.paragraph}}</i></p></ng-template> -->
-              {{song.lyrics}}
-          </div>
-      </tr>
+        <ng-container *ngFor="let song of albumCard.songs; let i = index">
+            <tr>
+                  <td><a data-bs-toggle="collapse" [href]="'#' + song.title.replace('(', '').replace(')', '').replace('\'', '').split(' ').join('')" role="button" aria-expanded="false">{{song.title}}</a></td>
+                  <td style='text-align:right'>{{song.time}}</td>
+              </tr>
+              <div *ngIf="song.lyrics && song.paragraph" [id]="song.title.replace('(', '').replace(')', '').replace('\'', '').split(' ').join('')" class="songs-album_lyrics collapse">
+                <div *ngIf="song.quoteFlag; else elseBlock">
+                    <p class="longQuotes">
+                        <ng-container *ngFor="let line of song.paragraph?.split('##')">
+                            <i>{{line}}</i> <br>
+                        </ng-container>
+                        <br>
+                    </p>
+                </div>
+                <ng-template #elseBlock>
+                    <p >
+                        <ng-container *ngFor="let line of song.paragraph?.split('##')">
+                            <i>{{line}}</i> <br>
+                        </ng-container>
+                    </p>
+                </ng-template> 
+                <ng-container *ngFor="let line of song.lyrics?.split('##')">
+                    {{line}}
+                    <br>
+                </ng-container>
+              </div>
+        </ng-container>
     </tbody>
 </table>

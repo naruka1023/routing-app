@@ -9,7 +9,7 @@ export interface albumCard{
     linerNotes?: string;
     imageURL: string
     links: link[];
-    songs: songModel[];
+    songs?: songModel[];
 }
 
 export interface link{
@@ -22,5 +22,5 @@ export interface songModel{
     time: string;
     paragraph?: string;
     quoteFlag: boolean;
-    lyrics: string
+    lyrics?: string
 }
