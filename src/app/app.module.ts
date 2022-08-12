@@ -7,6 +7,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BioPageComponent } from './bio-page/bio-page.component';
 import { SongsPageComponent } from './songs-page/songs-page.component';
 import { SongCardComponent } from './song-card/song-card.component';
+import { TourDateComponent } from './tour-date/tour-date.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SongCardComponent } from './song-card/song-card.component';
     LandingPageComponent,
     BioPageComponent,
     SongsPageComponent,
-    SongCardComponent
+    SongCardComponent,
+    TourDateComponent
   ],
   imports: [
     BrowserModule,

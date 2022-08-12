@@ -32,7 +32,7 @@
                   <td><a data-bs-toggle="collapse" [href]="'#' + song.title.replace('(', '').replace(')', '').replace('\'', '').split(' ').join('')" role="button" aria-expanded="false">{{song.title}}</a></td>
                   <td style='text-align:right'>{{song.time}}</td>
               </tr>
-              <div *ngIf="song.lyrics && song.paragraph" [id]="song.title.replace('(', '').replace(')', '').replace('\'', '').split(' ').join('')" class="songs-album_lyrics collapse">
+              <div *ngIf="song.lyrics || song.paragraph" [id]="song.title.replace('(', '').replace(')', '').replace('\'', '').split(' ').join('')" class="songs-album_lyrics collapse">
                 <div *ngIf="song.quoteFlag; else elseBlock">
                     <p class="longQuotes">
                         <ng-container *ngFor="let line of song.paragraph?.split('##')">
