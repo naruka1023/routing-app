@@ -22,7 +22,7 @@ export class TourDateComponent implements OnInit {
       date: "22/05/2022",
       country: "Bangkok, Thailand",
       venue: "Brownstone",
-      poster: "hearTooFest.jpg",
+      poster: "hearTooFest.png",
     },
     {
       title: "Siamese Crusties Live Gig Vol 3",
