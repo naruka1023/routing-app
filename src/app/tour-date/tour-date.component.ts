@@ -18,6 +18,13 @@ export class TourDateComponent implements OnInit {
       poster: "punkCrustGrinderThree.jpg",
     },
     {
+      title: "Hardcore Berserker",
+      date: "16/07/2022",
+      country: "Bangkok, Thailand",
+      venue: "Bad Neighbors Cafe",
+      poster: "hardcoreBerserker.jpg",
+    },
+    {
       title: "Hear too Fest",
       date: "22/05/2022",
       country: "Bangkok, Thailand",
