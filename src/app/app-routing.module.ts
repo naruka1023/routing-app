@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SongsPageComponent } from './songs-page/songs-page.component';
 
 const routes: Routes = [
+  { path: '', redirectTo:'landing-page', pathMatch:'full'},
   { path: 'landing-page', component: LandingPageComponent },
   { path: 'bio-page', component: BioPageComponent },
   { path: 'songs-page', component: SongsPageComponent },
