@@ -11,18 +11,18 @@ export class TourDateComponent implements OnInit {
   constructor() { }
   datesList : Dates[] = [
     {
+      title: "Punk Crust Grinder 3",
+      date: "30/7/2022",
+      country: "Bangkok, Thailand",
+      venue: "Speakerbox",
+      poster: "punkCrustGrinderThree.jpg",
+    },
+    {
       title: "Hear too Fest",
       date: "22/05/2022",
       country: "Bangkok, Thailand",
       venue: "Brownstone",
       poster: "hearTooFest.jpg",
-    },
-    {
-      title: "Ground to the Bone",
-      date: "22/07/2022",
-      country: "Bangkok, Thailand",
-      venue: "Jam",
-      poster: "groundToTheBone.jpeg",
     },
     {
       title: "Siamese Crusties Live Gig Vol 3",
@@ -32,11 +32,25 @@ export class TourDateComponent implements OnInit {
       poster: "siameseCrusties.jpg",
     },
     {
+      title: "Punk Crust Grinder 2",
+      date: "05/03/2020",
+      country: "Bangkok, Thailand",
+      venue: "Speakerbox",
+      poster: "punkCrustGrinder2.jpg",
+    },
+    {
       title: "Murder Bizkitz live in Vietnam",
       date: "04/01/2020",
       country: "Hanoi, Vietnam",
       venue: "The Hidden Music Club",
       poster: "liveInVietnam.jpg",
+    },
+    {
+      title: "Punk Crust Grinder",
+      date: "20/12/2019",
+      country: "Bangkok, Thailand",
+      venue: "Speakerbox",
+      poster: "trueFirstPunkCrustGrinder.jpg",
     },
     {
       title: "Murder Bizkitz live in Myanmar",
@@ -60,13 +74,6 @@ export class TourDateComponent implements OnInit {
       poster: "firstPunkCrustGrinder.jpg",
     },
     {
-      title: "Punk Crust Grinder 2",
-      date: "05/03/2018",
-      country: "Bangkok, Thailand",
-      venue: "Speakerbox",
-      poster: "punkCrustGrinder2.jpg",
-    },
-    {
       title: "the Dumpies Live",
       date: "02/03/2018",
       country: "Bangkok, Thailand",
@@ -86,6 +93,13 @@ export class TourDateComponent implements OnInit {
       country: "Bangkok, Thailand",
       venue: "Immortal Bar",
       poster: "example.jpg",
+    },
+    {
+      title: "Secret Gig",
+      date: "11/03/2016",
+      country: "Bangkok, Thailand",
+      venue: "Immortal Bar",
+      poster: "firstMbzGig.jpg",
     },
     {
       title: "Bangkok Hardcore Homicide",
