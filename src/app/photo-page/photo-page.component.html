@@ -1,0 +1,11 @@
+<div style="margin-bottom:1em">
+    <p class="h1">Photos/Videos</p>
+</div>
+<div *ngFor="let section of photoSection">
+    <p class="h3" style="margin: 2rem 0">{{section.name}}</p>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let image of section.images">
+            <img class="img-fluid" [src]="'assets/' + section.url + '/' + image"/>
+        </div>
+    </div>
+</div>

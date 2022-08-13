@@ -88,6 +88,13 @@ export class TourDateComponent implements OnInit {
       poster: "theDumpiesLive.jpg",
     },
     {
+      title: "Fight for Fuck Fest",
+      date: "13-14/01/2017",
+      country: "Bangkok, Thailand",
+      venue: "Brownstone",
+      poster: "fightForFuckFest.jpg",
+    },
+    {
       title: "After Show Jam",
       date: "10/09/2016",
       country: "Bangkok, Thailand",

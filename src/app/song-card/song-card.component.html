@@ -29,9 +29,9 @@
     <tbody>
         <ng-container *ngFor="let song of albumCard.songs; let i = index">
             <tr>
-                <a data-bs-toggle="collapse" [href]="'#' + song.title.replace('(', '').replace(')', '').replace('\'', '').split(' ').join('')" role="button" aria-expanded="false">
-                    <td>{{song.title}}</td>
-                    <td style='text-align:right'>{{song.time}}</td>
+                <a style="display: flex; justify-content: space-between" data-bs-toggle="collapse" [href]="'#' + song.title.replace('(', '').replace(')', '').replace('\'', '').split(' ').join('')" role="button" aria-expanded="false">
+                    <div>{{song.title}}</div>
+                    <div style='text-align:right'>{{song.time}}</div>
                 </a>
             </tr>
               <div *ngIf="song.lyrics || song.paragraph" [id]="song.title.replace('(', '').replace(')', '').replace('\'', '').split(' ').join('')" class="songs-album_lyrics collapse">

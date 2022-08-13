@@ -20,7 +20,7 @@ export class SongsPageComponent implements OnInit {
             title: "Control Your Mind or Someone Else Will",
             date: "February 20, 2021",
             linerNotes: "Recorded during the pandemic at Sixthirty Recording Studio Bangkok ## Mixed and mastered at Experimental Sounds Glasgow Scotland by Tommy Duffin",
-            imageURL: "assets/album-two.jpg",
+            imageURL: "assets/album-artwork/album-two.jpg",
             links:[
               {
                 url: "https://open.spotify.com/album/7eT7mfpwDTc7wMQyxGWMFs",
@@ -118,7 +118,7 @@ export class SongsPageComponent implements OnInit {
             title: "Murder Bizkitz",
             date: "July 17, 2018",
             linerNotes: "Recorded at Sixthirty Recording Studio Bangkok ## Mixed and mastered at Experimental Sounds Glasgow Scotland by Tommy Duffin",
-            imageURL: "assets/first-album.jpg",
+            imageURL: "assets/album-artwork/first-album.jpg",
             links:[
               {
                 url: "https://murderbizkitz.bandcamp.com/album/murder-bizkitz",
@@ -221,7 +221,7 @@ export class SongsPageComponent implements OnInit {
             title: "Kill Yourself Live on Facebook EP",
             date: "August 15, 2016",
             linerNotes: "Thanks to all involved in Murder Bizkitz from the beginning shout out to Amy Pai Shu Jon and anyone else who jammed with the band briefly you know who you are. Thank you. ## \"U.S.A.\" (Buchan, Duncan, McCormack )The Exploited All other songs Tony Mac",
-            imageURL: "assets/firstEP.jpg",
+            imageURL: "assets/album-artwork/firstEP.jpg",
             links:[
               {
                 url: "https://murderbizkitz.bandcamp.com/album/kill-yourself-live-on-facebook-ep",
@@ -270,7 +270,7 @@ export class SongsPageComponent implements OnInit {
             title: "NO GODS NO MASTERS SPLIT with DISM RAMROD AND THE HAPPY SPASTICS",
             date: "July 7, 2018",
             linerNotes: "",
-            imageURL: "assets/firstSplit.jpg",
+            imageURL: "assets/album-artwork/firstSplit.jpg",
             links:[
               {
                 url: "https://murderbizkitz.bandcamp.com/album/murder-bizkitz",
@@ -287,7 +287,7 @@ export class SongsPageComponent implements OnInit {
             title: "Myanmar Resistance",
             date: "2021",
             linerNotes: "",
-            imageURL: "assets/firstComp.jpg",
+            imageURL: "assets/album-artwork/firstComp.jpg",
             links:[
               {
                 url: "https://open.spotify.com/album/0hvMejzMbsqc073butTEHk",
@@ -303,7 +303,7 @@ export class SongsPageComponent implements OnInit {
             title: "A Global Mess - Vol.One: Asia",
             date: "2019",
             linerNotes: "",
-            imageURL: "assets/secondComp.jpg",
+            imageURL: "assets/album-artwork/secondComp.jpg",
             links:[
               {
                 url: "https://open.spotify.com/album/48acGCxxJzu1gYPo6YOvoU",

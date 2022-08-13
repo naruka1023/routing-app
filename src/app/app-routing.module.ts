@@ -4,6 +4,7 @@ import { BioPageComponent } from './bio-page/bio-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SongsPageComponent } from './songs-page/songs-page.component';
 import { TourDateComponent } from './tour-date/tour-date.component';
+import { PhotoPageComponent } from './photo-page/photo-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo:'landing-page', pathMatch:'full'},
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'bio-page', component: BioPageComponent },
   { path: 'songs-page', component: SongsPageComponent },
   { path: 'tour-date-page', component: TourDateComponent },
+  { path: 'photo-page', component: PhotoPageComponent },
 ];
 
 @NgModule({
