@@ -73,36 +73,6 @@ export class PhotoPageComponent implements OnInit {
       ]
     },
     {
-      name: 'Gigs',
-      url: 'gigs',
-      images: [
-        'afterShowJam.jpg',
-        'bangkok-hardcore-homocide_immortal.jpg',
-        'charityEvent.jpg',
-        'electricFrenzy.jpg',
-        'example.jpg',
-        'fightForFuckFest.jpg',
-        'firstMbzGig.jpg',
-        'firstPunkCrustGrinder.jpg',
-        'groundToTheBone.jpeg',
-        'happinessArea2.jpg',
-        'hardcore-is-in-my-blood.jpg',
-        'hardcoreBerserker.jpg',
-        'hearTooFest.jpg',
-        'hearTooFest.png',
-        'liveAtBrownstone.jpg',
-        'liveInVietnam.jpg',
-        'liveInYangon.jpg',
-        'punkCrustGrinder2.jpg',
-        'punkCrustGrinderThree.jpg',
-        'siameseCrusties.jpg',
-        'thailandGrindFest.jpg',
-        'theDumpiesLive.jpg',
-        'theGongOfThePong.jpg',
-        'trueFirstPunkCrustGrinder.jpg'
-      ]
-    },
-    {
       name: 'Album Artwork',
       url: 'album-artwork',
       images: [
