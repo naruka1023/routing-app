@@ -43,7 +43,7 @@ export class TourDateComponent implements OnInit {
       date: "05/03/2020",
       country: "Bangkok, Thailand",
       venue: "Speakerbox",
-      poster: "punkCrustGrinder2.jpg",
+      poster: "punkCrustGrinder2.png",
     },
     {
       title: "Murder Bizkitz live in Vietnam",
@@ -81,11 +81,18 @@ export class TourDateComponent implements OnInit {
       poster: "firstPunkCrustGrinder.jpg",
     },
     {
-      title: "the Dumpies Live",
-      date: "02/03/2018",
+      title: "Thailand Grindfest",
+      date: "15/09/2018",
       country: "Bangkok, Thailand",
-      venue: "Overstay",
-      poster: "theDumpiesLive.jpg",
+      venue: "Brownstone",
+      poster: "thailandGrindFest.jpg",
+    },
+    {
+      title: "Laokai Growl in the Dark",
+      date: "18/02/2017",
+      country: "Pattaya, Thailand",
+      venue: "Pattaya Sports Arena",
+      poster: "laokaiGrowlInTheDark.jpg",
     },
     {
       title: "Fight for Fuck Fest",
@@ -107,6 +114,13 @@ export class TourDateComponent implements OnInit {
       country: "Bangkok, Thailand",
       venue: "Immortal Bar",
       poster: "example.jpg",
+    },
+    {
+      title: "Lemmy Motorhead Tribute",
+      date: "04/03/2016",
+      country: "Bangkok, Thailand",
+      venue: "Fatty's Bar and Diner",
+      poster: "lemmyMotorheadTribute.jpg",
     },
     {
       title: "Secret Gig",

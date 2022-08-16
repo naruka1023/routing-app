@@ -15,7 +15,6 @@ export class PhotoPageComponent implements OnInit {
       name: 'Promotional Pictures',
       url: 'promoPictures',
       images: [
-        '12356755_526702280821569_4473054889853410144_o - Copy.jpg',
         '1614924760345.jpg',
         '259323794_310355277758964_6181644638518223651_n.jpg',
         '35278037_391700908008526_1319354154501537792_n - Copy.jpg',

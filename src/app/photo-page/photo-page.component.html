@@ -5,7 +5,9 @@
     <p class="h3" style="margin: 2rem 0">{{section.name}}</p>
     <div class="row">
         <div class="col-md-3" *ngFor="let image of section.images">
-            <img class="img-fluid" [src]="'assets/' + section.url + '/' + image"/>
+            <a [download]="image" [href]="'assets/' + section.url + '/' + image" [title]="image">
+                <img class="img-fluid" [src]="'assets/' + section.url + '/' + image"/>
+            </a>
         </div>
     </div>
 </div>
