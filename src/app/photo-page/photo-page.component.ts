@@ -102,9 +102,34 @@ export class PhotoPageComponent implements OnInit {
       ]
     },
   ];
+  imageClicked(imageSource: string){
 
+      // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    modal!.style.display = "block";
+    modalImg!.setAttribute('src', imageSource);
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    var img = document.getElementById("myImg");
+    modal!.addEventListener('click', function() { 
+      modal!.style.display = "none";
+    }); 
+    span.addEventListener('click', function() { 
+      modal!.style.display = "none";
+    }); 
+  }
+  
+  // When the user clicks on <span> (x), close the modal
   ngOnInit(): void {
 
+  
   }
-
 }
+  
+
+

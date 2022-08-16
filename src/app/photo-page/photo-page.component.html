@@ -4,10 +4,33 @@
 <div *ngFor="let section of photoSection">
     <p class="h3" style="margin: 2rem 0">{{section.name}}</p>
     <div class="row">
-        <div class="col-md-3" *ngFor="let image of section.images">
-            <a [download]="image" [href]="'assets/' + section.url + '/' + image" [title]="image">
+        <div class="col-md-3" style='margin: auto 0' *ngFor="let image of section.images">
+            <div class="container">
                 <img class="img-fluid" [src]="'assets/' + section.url + '/' + image"/>
-            </a>
+                <div class="overlay">
+                    <div class="text">
+                            <a [download]="image" [href]="'assets/' + section.url + '/' + image" [title]="image">
+                                <div class="linkEntity"><img style='max-width: 50%' class='img-fluid' src="assets/download.png"></div>
+                            </a>    
+                            <div class="linkEntity"><img (click)="imageClicked('assets/' + section.url + '/' + image)" style='max-width: 50%' class='img-fluid' src="assets/fullscreen.png"></div>
+                        </div>
+                </div>
+              </div>
         </div>
     </div>
+</div>
+<!-- Trigger the Modal -->
+<img id="myImg" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
 </div>
